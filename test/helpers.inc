@@ -667,7 +667,7 @@ function StartSearchd ( $config_file, $error_file, $pidfile, &$error, $requireme
 	} else
 	{
 //		print  ( "$path --config $abs_config_file $extra_params > $abs_error_file\n" );
-		system ( "$path --config $abs_config_file $extra_params > $abs_error_file", $retval );
+		system ( "$path --config $abs_config_file $extra_params --logreplciation > $abs_error_file", $retval );
 //		print ("started\n");
 	}
 
